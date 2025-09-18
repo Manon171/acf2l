@@ -1,0 +1,100 @@
+.paragraphe1{
+font-size : 100 px;
+color : red
+}
+/* Contour noir autour de chaque carte (image + titre + prix) */
+.course-single {
+    border: 3px solid #000000;   /* contour noir */
+    border-radius: 8px;          /* coins arrondis (optionnel) */
+    padding: 10px;               /* petit espace intérieur */
+    background: #D9D9D9;         /* fond blanc (optionnel, enlève si tu veux garder bleu) */
+}
+/* Fixer une hauteur identique pour toutes les cartes ULM */
+.courses .course-single {
+  height: 500px;             /* ajuste la hauteur globale */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Uniformiser la taille des images */
+.courses .course-single figure img {
+  height: 250px;             /* fixe la hauteur de l’image */
+  object-fit: cover;         /* recadre sans déformer */
+  width: 100%;
+}
+/* Supprimer le blanc entre le slider et "Nos activités" */
+.our-activities {
+    background: #BDD4E2;       /* bleu clair */
+    margin-top: 0 !important;  /* empêche l'espace en haut */
+    padding-top: 40px;         /* ajoute juste un petit espace si besoin */
+}
+
+/* Supprime la marge du titre qui crée un vide blanc */
+.our-activities h2,
+.our-activities h5 {
+    margin-top: 0 !important;
+}
+/* Réduit l'espace avant "Nos moyens pédagogiques" */
+.about-us {
+    padding-top: 20px !important;   /* au lieu de 100px */
+}
+
+/* Supprime aussi la marge haute du titre si besoin */
+.about-us  h2 {
+    margin-top: 0 !important;
+}
+/* Ajoute de l'espace sous le titre "Nos moyens pédagogiques" */
+.about-us  h2 {
+    margin-bottom: 20px !important; /* augmente l’espace sous le titre */
+}
+
+h4{
+	font-weight :normal;
+}
+.about-us p {
+  margin-bottom: 30px; /* espace sous le paragraphe */
+}
+
+.about-us h4 {
+  margin-top: 20px; /* espace au-dessus du h4 */
+  margin-bottom:30px;
+}
+
+/* Conteneur parent centré */
+.about-us .about-row-wrapper {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    margin-top: 20px;        /* si besoin, espace au-dessus */
+}
+
+/* Ligne image + texte */
+.about-us .about-row {
+    display: flex;
+    align-items: flex-start; /* aligne le haut de l’image et du texte */
+    gap: 20px;               /* espace entre image et texte */
+}
+
+/* Image */
+.about-us .about-image img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+/* Texte */
+.about-us .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+}
+
+
+/* --- Fix position et centrage bloc Contact --- */
+.contactus {
+    padding-top:0 ;
+    width: 600px;
+
+    
+}
+
