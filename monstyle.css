@@ -89,12 +89,79 @@ h4{
     justify-content: flex-start;  
 }
 
-
-/* --- Fix position et centrage bloc Contact --- */
-.contactus {
-    padding-top:0 ;
-    width: 600px;
-
-    
+/* Supprime l'espace entre "Nos moyens pédagogiques" et "Contact" */
+.about-us {
+    padding-bottom: 0 !important;  /* supprime l’espace en bas */
 }
 
+.contactus {
+    margin-top: 0 !important;      /* pas de marge en haut */
+    padding-top: 0 !important;     /* pas de padding en haut */
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+padding-bottom:0px;
+
+}
+
+/* Réduit l’espace entre email / téléphone / adresse */
+.contact-info p {
+    margin-bottom: 15px !important; 
+    margin-right:130px;/* petit écart entre chaque ligne */
+    font-size: 18px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centre horizontalement */
+    text-align: center;    /* centre le texte */
+}
+
+
+/* Ajoute un petit espace entre les contacts et les réseaux sociaux */
+.contact-social-link {
+    margin:0 250px;
+    margin-top: 20px;   /* espace au-dessus du bloc réseaux sociaux */
+    display: flex;
+    flex-direction: column; /* reste en colonne */
+    align-items: center;    /* icônes centrées */
+    gap: 12px;              /* petit écart entre chaque icône */
+}
+
+.contact-info .address {
+    white-space: nowrap;   /* empêche les retours à la ligne */
+    display: block;        /* s'assure que ça reste une seule ligne */
+}
+
+/* Centrer la colonne contact par rapport à l'image/colonne voisine */
+.contactus .row {
+  display: flex;
+  align-items: center; /* centre verticalement les deux colonnes */}
+
+/* Colonne gauche : infos contact */
+.contactus .col-md-6:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centre verticalement dans la colonne */
+  align-items: flex-start;   /* aligne à gauche */
+  text-align: left;          /* texte aligné à gauche */
+}
+
+/* Le titre "Contacter nous !" reste centré */
+.contactus .color-contact {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+  font-size: 18px;
+  margin-left:-40px;
+  text-align: left;          /* force alignement gauche */
+  display: block;            /* chaque ligne prend toute la largeur */
+  white-space: nowrap;       /* reste sur une seule ligne */
+}
+/* Décale seulement la colonne gauche (infos contact) */
+.contactus .col-md-6:first-child {
+  margin-left: -60px; /* ajuste la valeur (ex : -20px, -30px...) */
+}
